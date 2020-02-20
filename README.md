@@ -1,3 +1,4 @@
 # render
 
-A description of this package.
+Easily build a custom html doc in swift
+
