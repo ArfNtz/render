@@ -11,9 +11,10 @@ This example uses `HtmlView`and `View` from the **render** library.
 
 **Motivation**
 
-- existing libraries often have complete implementations from which I only need a small part
+- existing libraries have features or full implementations from which I only need a small part
 - 'render' is around 30 lines of code (View.swift)
 - write reusable web components in a simple way
+- benefit from swift power while waiting for a "swiftUI to browser" official implementation
 
 ## Usage
 
