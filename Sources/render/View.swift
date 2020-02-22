@@ -6,22 +6,29 @@ public enum View {
     case children(views:[View])
     case content(String)
 
-    // to render the tree structure into a string
-    public func into(_ r:inout String) {
+    // render the tree structure into a string
+    public func render(into r:inout String) {
         switch self {
         case let .element(start, end, children):
             r.append(start)
             if children != nil {
-                children!.into(&r)
+                children!.render(into: &r)
             }
             r.append(end)
         case let .children(children):
             r.append(children.reduce(into: "") {
-                $1.into(&$0)
+                $1.render(into: &$0)
             })
         case let .content(string):
             r.append(string)
         }
+    }
+    
+    // convenience method to render
+    public func render() -> String {
+        var r = ""
+        render(into: &r)
+        return r
     }
 
     // convenience method to build groups

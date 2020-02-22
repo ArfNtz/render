@@ -1,15 +1,21 @@
 import render
 
+// a flyer document,
 // view
 public extension View {
     
     // the flyer
     static func flyer(_ f:Flyer) -> View {
         return .doc(
-            .styleBar()
+            .styleBar(),
+            .t1(f.title),
+            .t2(f.subTitle),
+            .t3(f.partTitle),
+            .t4(f.partText),
+            .t5(f.moreInfo)
         )
     }
-    
+
     // the doc structure
     static func doc(_ children:View...) -> View {
         return .doctype("html",
