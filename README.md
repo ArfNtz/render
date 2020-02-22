@@ -7,7 +7,6 @@ For example I take a flyer document (a.k.a leaflet, tract). `FlyerView` defines 
 **Motivation**
 
 - existing libraries often have complete implementations from which I only need a small part
-- I reduce code size to known and used code 
 - 'render' is around 30 lines of code (View.swift)
 - write reusable web components in a simple way
 
