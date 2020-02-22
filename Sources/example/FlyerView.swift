@@ -38,9 +38,9 @@ public extension View {
     // a "style bar"
     static func styleBar() -> View {
         return group(
-            .element(start: "<span id='mode_color_icon' class='icon' onclick='mode_color_switch()' />"),
-            .element(start: "<span id='mode_font_icon' class='icon' onclick='mode_font_switch()' />"),
-            .element(start: "<span id='mode_layout_icon' class='icon' onclick='mode_layout_switch()' />")
+            .element(start: "<span id='mode_color_icon' class='icon' onclick='mode_color_switch()'></span>"),
+            .element(start: "<span id='mode_font_icon' class='icon' onclick='mode_font_switch()'></span>"),
+            .element(start: "<span id='mode_layout_icon' class='icon' onclick='mode_layout_switch()'></span>")
         )
     }
     // some texts
