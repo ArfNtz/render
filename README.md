@@ -9,7 +9,7 @@ For example, to make a flyer document (a.k.a leaflet, tract) :
 
 This example uses `HtmlView`and `View` from the **render** library.
 
-**Motivation**
+## Motivation
 
 - existing libraries have features or full implementations from which I only need a small part
 - 'render' is around 30 lines of code (View.swift)
