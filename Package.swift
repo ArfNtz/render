@@ -7,6 +7,7 @@ let package = Package(
     name: "render",
     products: [
         .library(name: "render", targets: ["render"]),
+        .executable(name: "example", targets: ["example"]),
     ],
     dependencies: [
     ],
@@ -14,6 +15,9 @@ let package = Package(
         .target(
             name: "render",
             dependencies: []),
+        .target(
+            name: "example",
+            dependencies: ["render"]),
         .testTarget(
             name: "renderTests",
             dependencies: ["render"]),
