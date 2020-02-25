@@ -8,7 +8,8 @@ For example, to make a flyer document (a.k.a leaflet, tract) :
 - `main.swift` injects the data structure into the view and renders the document.
 
 This example uses `HtmlView` and `View` from the **render** library.
-`render` may be uses with other Views towards other document types (svg, pdf ...).
+
+**render** may be uses with other Views towards other document types (svg, pdf ...).
 
 ## Motivation
 
