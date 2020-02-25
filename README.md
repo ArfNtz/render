@@ -75,7 +75,7 @@ return tag(name:"span", attributes:"class='t1'", .content(text))
 
 - A call to `render` : 
 
-```
+```swift
 View.flyer(
     Flyer(
         title: "Grand titre",
