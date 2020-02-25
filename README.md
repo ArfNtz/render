@@ -12,9 +12,9 @@ There is an example further down.
 - existing libraries have features or full implementations from which I only need a small part
 - 'render' is around 30 lines of code (View.swift)
 
-## The `Flyer` (a.k.a leaflet, tract) example
+## The `Flyer` example
 
-The flyer example defines a `Flyer` data object, then a `FlyerView` for an html type document, then calls `render` to produce the document, this way :
+The flyer (a.k.a leaflet, tract) example defines a `Flyer` data object, then a `FlyerView` for an html type document, then calls `render` to produce the document, this way :
 
 - The `Flyer` data object :
 ```swift
