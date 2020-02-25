@@ -1,15 +1,10 @@
 # Render
 
-A library to define a document type, feed it with some data, and render it.
+A library to render documents. First, define the document type, then feed it with some data, then call `render`.
 
-For example, to make a flyer document (a.k.a leaflet, tract) in html :
-- `FlyerView.swift` defines the presentation (i.e. document structure, layout, colors, fonts).
-- `Flyer.swift` defines the data structure.
-- `main.swift` injects the data structure into the view and renders the document.
+There is an example further down.
 
-This example uses `HtmlView` and `View` from this library.
-
-`render` can be used with other `Views` towards other document types (svg, pdf ...).
+`render` can be used with any document types you define (html, svg, pdf ...).
 
 ## Motivation
 
@@ -17,7 +12,11 @@ This example uses `HtmlView` and `View` from this library.
 - 'render' is around 30 lines of code (View.swift)
 - write reusable web components in a swift way (performance, portability, simple syntax)
 
-## The `Flyer` example
+## The `Flyer` (a.k.a leaflet, tract) example
+
+- `main.swift` injects the data structure into the view and renders the document.
+
+This example uses `HtmlView` and `View` from this library.
 
 The flyer example injects a `Flyer` data object into a `FlyerView` and calls the `render` method to produce an html document, this way :
 
@@ -32,7 +31,10 @@ public struct Flyer {
 }
 ```
 
-- The `Flyer` view : 
+- The `FlyerView` : 
+
+It defines the presentation (i.e. document structure, layout, colors, fonts).
+It uses `HtmlView` and `View` that comes with `render`.
 
 ```swift
 // the flyer
@@ -75,6 +77,8 @@ return tag(name:"span", attributes:"class='t1'", .content(text))
 ```
 
 - A call to `render` : 
+
+The `Flyer` data structure is injected into the `FlierView` to produce the document.
 
 ```swift
 View.flyer(
