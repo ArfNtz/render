@@ -68,6 +68,12 @@ static func doc(_ children:View...) -> View {
         .script("./js/mode_layout.js")
     )
 }
+
+// some texts
+static func t1(_ text:String) -> View {
+return tag(name:"span", attributes:"class='t1'", .content(text))
+}
+...
 ```
 
 - A call to `render` : 
