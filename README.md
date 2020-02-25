@@ -1,6 +1,6 @@
 # Render
 
-A library to render documents. First, define the document type, then feed it with some data, then call `render`.
+A library to render documents : first, define the document type, then feed it with some data, then call `render`.
 
 There is an example further down.
 
