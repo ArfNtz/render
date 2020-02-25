@@ -3,7 +3,7 @@
 A library to define a document type, feed it with some data, and render it.
 
 For example, to make a flyer document (a.k.a leaflet, tract) :
-- `FlyerView.swift` defines the presentation (i.e. document strcture, layout, colors, fonts).
+- `FlyerView.swift` defines the presentation (i.e. document structure, layout, colors, fonts).
 - `Flyer.swift` defines the data structure.
 - `main.swift` injects the data structure into the view and renders the document.
 
