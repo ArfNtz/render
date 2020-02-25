@@ -14,7 +14,7 @@ There is an example further down.
 
 ## The `Flyer` (a.k.a leaflet, tract) example
 
-The flyer example injects a `Flyer` data object into a `FlyerView` and calls the `render` method to produce an html document, this way :
+The flyer example defines a `Flyer` data object and a `FlyerView` towards an html document, then calls the `render` method to produce the document, this way :
 
 - The `Flyer` data object :
 ```swift
