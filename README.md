@@ -20,18 +20,15 @@ This example uses `HtmlView`and `View` from the **render** library.
 
 The flyer example injects a `Flyer` data object into a `FlyerView` and calls the `render` method to produce an html document, this way :
 
-- the `Flyer` data object :
+- The `Flyer` data object :
 ```swift
-var html = ""
-View.flyer(
-    Flyer(
-        title: "Grand titre",
-        subTitle: "Sous titre",
-        partTitle: "Titre de paragraphe",
-        partText: "Texte du paragraphe",
-        moreInfo: "notes complémentaires"
-    )
-).render(into: &html)
+public struct Flyer {
+    var title:String;
+    var subTitle:String;
+    var partTitle:String;
+    var partText:String;
+    var moreInfo:String;
+}
 ```
 
 - The `Flyer` view : 
