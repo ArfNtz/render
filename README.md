@@ -2,12 +2,14 @@
 
 A library to define a document type, feed it with some data, and render it.
 
-For example, to make a flyer document (a.k.a leaflet, tract) :
+For example, to make a flyer document (a.k.a leaflet, tract) in html :
 - `FlyerView.swift` defines the presentation (i.e. document structure, layout, colors, fonts).
 - `Flyer.swift` defines the data structure.
 - `main.swift` injects the data structure into the view and renders the document.
 
-This example uses `HtmlView` and `View` from this library. **Render** may be used with other Views towards other document types (svg, pdf ...).
+This example uses `HtmlView` and `View` from this library.
+
+`render` can be used with other `Views` towards other document types (svg, pdf ...).
 
 ## Motivation
 
