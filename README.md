@@ -87,7 +87,7 @@ View.flyer(
 ).render(into: &html)
 ```
 
-- The html document produced by `render` : 
+- The resulting html document, produced by `render` : 
 
 ```html
 <!doctype html>
