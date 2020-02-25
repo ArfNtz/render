@@ -10,7 +10,7 @@ There is an example further down.
 
 - write reusable presentation components in a swift way (performance, portability, simple syntax)
 - existing libraries have features or full implementations from which I only need a small part
-- many existing libraries include specific document types, I only need the generic part
+- many existing libraries include specific document types, I only need the generic / open part
 - 'render' is around 30 lines of code (View.swift)
 
 ## The `Flyer` example
