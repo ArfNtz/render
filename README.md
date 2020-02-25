@@ -8,9 +8,9 @@ There is an example further down.
 
 ## Motivation
 
+- write reusable web components in a swift way (performance, portability, simple syntax)
 - existing libraries have features or full implementations from which I only need a small part
 - 'render' is around 30 lines of code (View.swift)
-- write reusable web components in a swift way (performance, portability, simple syntax)
 
 ## The `Flyer` (a.k.a leaflet, tract) example
 
