@@ -14,10 +14,6 @@ There is an example further down.
 
 ## The `Flyer` (a.k.a leaflet, tract) example
 
-- `main.swift` injects the data structure into the view and renders the document.
-
-This example uses `HtmlView` and `View` from this library.
-
 The flyer example injects a `Flyer` data object into a `FlyerView` and calls the `render` method to produce an html document, this way :
 
 - The `Flyer` data object :
