@@ -36,14 +36,14 @@ public struct Flyer {
 ```swift
 // the flyer
 static func flyer(_ f:Flyer) -> View {
-return .doc(
-    .styleBar(),
-    .t1(f.title),
-    .t2(f.subTitle),
-    .t3(f.partTitle),
-    .t4(f.partText),
-    .t5(f.moreInfo)
-)
+    return .doc(
+        .styleBar(),
+        .t1(f.title),
+        .t2(f.subTitle),
+        .t3(f.partTitle),
+        .t4(f.partText),
+        .t5(f.moreInfo)
+    )
 }
 
 // the doc structure
