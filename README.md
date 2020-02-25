@@ -9,7 +9,7 @@ For example, to make a flyer document (a.k.a leaflet, tract) :
 
 This example uses `HtmlView` and `View` from the **render** library.
 
-**render** may be uses with other Views towards other document types (svg, pdf ...).
+**Render** may be used with other Views towards other document types (svg, pdf ...).
 
 ## Motivation
 
