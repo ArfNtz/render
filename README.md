@@ -13,9 +13,7 @@ This example uses `HtmlView`and `View` from the **render** library.
 
 - existing libraries have features or full implementations from which I only need a small part
 - 'render' is around 30 lines of code (View.swift)
-- write reusable web components in a simple way
-- benefit from swift's simple syntax
-- benefit from swift's performances as a machine code compiled langage
+- write reusable web components in a swift way (performance, portability, simple syntax)
 
 ## The `Flyer` example
 
