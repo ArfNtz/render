@@ -16,10 +16,11 @@ This example uses `HtmlView`and `View` from the **render** library.
 - write reusable web components in a simple way
 - benefit from swift power while waiting for a "swiftUI to browser" official implementation
 
-## Usage
+## The `Flyer` example
 
 The flyer example injects a `Flyer` data object into a `FlyerView` and calls the `render` method to produce an html document, this way :
 
+- the `Flyer` data object :
 ```swift
 var html = ""
 View.flyer(
@@ -33,9 +34,22 @@ View.flyer(
 ).render(into: &html)
 ```
 
-The presentation is defined in `FlyerView.swift' : 
+- The `Flyer` view : 
 
 ```swift
+// the flyer
+static func flyer(_ f:Flyer) -> View {
+return .doc(
+    .styleBar(),
+    .t1(f.title),
+    .t2(f.subTitle),
+    .t3(f.partTitle),
+    .t4(f.partText),
+    .t5(f.moreInfo)
+)
+}
+
+// the doc structure
 static func doc(_ children:View...) -> View {
     return .doctype("html",
         .html(
@@ -56,7 +70,21 @@ static func doc(_ children:View...) -> View {
 }
 ```
 
-This html code is generated :
+- A call to `render` : 
+
+```
+View.flyer(
+    Flyer(
+        title: "Grand titre",
+        subTitle: "Sous titre",
+        partTitle: "Titre de paragraphe",
+        partText: "Texte du paragraphe",
+        moreInfo: "notes complémentaires"
+    )
+).render(into: &html)
+```
+
+- The html document produced by `render` : 
 
 ```html
 <!doctype html>
